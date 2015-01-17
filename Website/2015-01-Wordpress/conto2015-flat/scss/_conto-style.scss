@@ -1,0 +1,38 @@
+h1{
+	//font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+	min-height: 100%;
+	background: $conto-orange;
+	//background-blend-mode: lighten;
+	background-position: center 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	color: white;
+	.row .columns .row {
+		margin-top: 35%;
+	}
+	h1,h2{
+		color: white;
+	}
+	.tagline {
+		@extend h2;
+		font-family: 'Quicksand', serif;
+		font-weight: 300;
+		margin-bottom: 2em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	#main-logo {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+#content-list {
+	article {
+		margin-top: 4em;
+	}
+}
