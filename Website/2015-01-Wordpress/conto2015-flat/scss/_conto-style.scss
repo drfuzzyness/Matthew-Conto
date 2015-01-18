@@ -47,18 +47,22 @@ header {
 #sidebar {
 	ul {
 		text-align: right;
-		list-style: none;
 		font-style: oblique;
 		color: black;
 		margin-top: 6em;
+
 		a {
 			color: black;
 			font-weight: 300;
+			//padding: 0;
 			&:visited {
 				color: black;
 			}
 		}
 		&#content-types-list {
+			li {
+				margin-bottom: 0;
+			}
 			li a:hover, li a:active, .active {
 				font-weight: 400;
 				color: $conto-orange;

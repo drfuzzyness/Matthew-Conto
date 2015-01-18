@@ -55,7 +55,6 @@ header .tagline {
 /* line 48, ../scss/_conto-style.scss */
 #sidebar ul {
   text-align: right;
-  list-style: none;
   font-style: oblique;
   color: black;
   margin-top: 6em;
@@ -65,36 +64,40 @@ header .tagline {
   color: black;
   font-weight: 300;
 }
-/* line 57, ../scss/_conto-style.scss */
+/* line 58, ../scss/_conto-style.scss */
 #sidebar ul a:visited {
   color: black;
 }
-/* line 62, ../scss/_conto-style.scss */
+/* line 63, ../scss/_conto-style.scss */
+#sidebar ul#content-types-list li {
+  margin-bottom: 0;
+}
+/* line 66, ../scss/_conto-style.scss */
 #sidebar ul#content-types-list li a:hover, #sidebar ul#content-types-list li a:active, #sidebar ul#content-types-list .active {
   font-weight: 400;
   color: #f68a1f;
 }
 
-/* line 71, ../scss/_conto-style.scss */
+/* line 75, ../scss/_conto-style.scss */
 #content-list article {
   margin-bottom: 6em;
 }
 
-/* line 76, ../scss/_conto-style.scss */
+/* line 80, ../scss/_conto-style.scss */
 footer {
   background: url("../img/header-bg.png") #3dc7d2;
   background-blend-mode: color-dodge;
   color: white;
 }
-/* line 81, ../scss/_conto-style.scss */
+/* line 85, ../scss/_conto-style.scss */
 footer .row {
   padding-top: 10em;
 }
-/* line 84, ../scss/_conto-style.scss */
+/* line 88, ../scss/_conto-style.scss */
 footer h1, footer h2, footer h3 {
   color: white;
 }
-/* line 87, ../scss/_conto-style.scss */
+/* line 91, ../scss/_conto-style.scss */
 footer a {
   color: white;
   transition: padding .25s;
@@ -102,11 +105,11 @@ footer a {
   padding: 0 .5em;
   font-style: oblique;
 }
-/* line 93, ../scss/_conto-style.scss */
+/* line 97, ../scss/_conto-style.scss */
 footer a:visited {
   color: white;
 }
-/* line 96, ../scss/_conto-style.scss */
+/* line 100, ../scss/_conto-style.scss */
 footer a:hover {
   color: #3dc7d2;
   font-weight: 500;
@@ -115,18 +118,18 @@ footer a:hover {
   font-style: normal;
   transition: padding .25s;
 }
-/* line 106, ../scss/_conto-style.scss */
+/* line 110, ../scss/_conto-style.scss */
 footer ul {
   margin-top: 1em;
   list-style: none;
   line-height: 2.5em;
 }
-/* line 111, ../scss/_conto-style.scss */
+/* line 115, ../scss/_conto-style.scss */
 footer .credit-line {
   font-weight: 300;
   font-size: 140%;
 }
-/* line 114, ../scss/_conto-style.scss */
+/* line 118, ../scss/_conto-style.scss */
 footer .credit-line span.cc {
   font-style: normal;
   font-family: "Creative Commons";
