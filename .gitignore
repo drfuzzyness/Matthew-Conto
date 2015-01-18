@@ -1,8 +1,9 @@
 # Bower / SASS
-*/bower_components/*
-*/.sass-cache/*
-*.DS_Store
-*/stylesheets/*
+/bower_components/*
+/.sass-cache/*
+.DS_Store
+/stylesheets/*
+.scss
 
 
 # OSX
