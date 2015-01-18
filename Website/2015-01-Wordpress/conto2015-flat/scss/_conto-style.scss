@@ -1,38 +1,119 @@
-h1{
-	//font-family: 'Fira Sans', sans-serif;
-}
-
 header {
 	min-height: 100%;
-	background: $conto-orange;
-	//background-blend-mode: lighten;
-	background-position: center 25%;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url("../img/header-bg.png") $conto-orange;
+	background-blend-mode: color-dodge;
 
 	color: white;
-	.row .columns .row {
-		margin-top: 35%;
+	a {
+		color: white;
+		transition: padding .25s;
+		border-radius: .125em;
+		padding: 0 .5em;
+		font-style: oblique;
+		&:visited {
+			color: white;
+		}
+		&:hover{
+			color: $conto-orange;
+			font-weight: 500;
+			background-color: white;
+			padding: .5em .5em;
+			transition: padding .25s;
+			//box-shadow: 0 .075em .125em #444;
+		}
 	}
+	.row .columns .row {
+			margin-top: 35%;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
 	h1,h2{
 		color: white;
 	}
+
 	.tagline {
-		@extend h2;
-		font-family: 'Quicksand', serif;
-		font-weight: 300;
-		margin-bottom: 2em;
-		text-align: center;
-		text-transform: uppercase;
+		line-height: 1.2em;
 	}
-	#main-logo {
-		margin-top: 1em;
-		margin-bottom: 1em;
+
+}
+
+#body {
+	margin-top: 6em;
+}
+
+#sidebar {
+	ul {
+		text-align: right;
+		list-style: none;
+		font-style: oblique;
+		color: black;
+		margin-top: 6em;
+		a {
+			color: black;
+			font-weight: 300;
+			&:visited {
+				color: black;
+			}
+		}
+		&#content-types-list {
+			li a:hover, li a:active, .active {
+				font-weight: 400;
+				color: $conto-orange;
+			}
+		}
 	}
 }
 
 #content-list {
 	article {
-		margin-top: 4em;
+		margin-bottom: 6em;
+	}
+}
+
+footer {
+	background: url("../img/header-bg.png") $conto-blue;
+	background-blend-mode: color-dodge;
+
+	color: white;
+	.row {
+		padding-top: 10em;
+	}
+	h1, h2, h3 {
+		color: white;
+	}
+	a {
+		color: white;
+		transition: padding .25s;
+		border-radius: .125em;
+		padding: 0 .5em;
+		font-style: oblique;
+		&:visited {
+			color: white;
+		}
+		&:hover{
+			color: $conto-blue;
+			font-weight: 500;
+			background-color: white;
+			padding: .5em .5em;
+			font-style: normal;
+			transition: padding .25s;
+			//box-shadow: 0 .075em .125em #444;
+		}
+	}
+	ul {
+		margin-top: 1em;
+		list-style: none;
+		line-height: 2.5em;
+	}
+	.credit-line {
+		font-weight: 300;
+		font-size: 140%;
+		span.cc {
+			font-style: normal; 
+			font-family: $font-creative-commons;
+		}
 	}
 }

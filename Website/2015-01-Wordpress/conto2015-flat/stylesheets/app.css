@@ -1,37 +1,135 @@
-/* line 5, ../scss/_conto-style.scss */
+@font-face {
+  font-family: 'Creative Commons';
+  src: url("../img/cc.ttf");
+  /* IE6-IE8 */
+}
+/* line 1, ../scss/_conto-style.scss */
 header {
   min-height: 100%;
-  background: #f68a1f;
-  background-position: center 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("../img/header-bg.png") #f68a1f;
+  background-blend-mode: color-dodge;
   color: white;
 }
-/* line 14, ../scss/_conto-style.scss */
+/* line 7, ../scss/_conto-style.scss */
+header a {
+  color: white;
+  transition: padding .25s;
+  border-radius: .125em;
+  padding: 0 .5em;
+  font-style: oblique;
+}
+/* line 13, ../scss/_conto-style.scss */
+header a:visited {
+  color: white;
+}
+/* line 16, ../scss/_conto-style.scss */
+header a:hover {
+  color: #f68a1f;
+  font-weight: 500;
+  background-color: white;
+  padding: .5em .5em;
+  transition: padding .25s;
+}
+/* line 25, ../scss/_conto-style.scss */
 header .row .columns .row {
   margin-top: 35%;
 }
-/* line 17, ../scss/_conto-style.scss */
-header h1, header h2, header .tagline {
+/* line 29, ../scss/_conto-style.scss */
+header h1 {
+  font-size: 4em;
+}
+/* line 33, ../scss/_conto-style.scss */
+header h1, header h2 {
   color: white;
 }
-/* line 20, ../scss/_conto-style.scss */
+/* line 37, ../scss/_conto-style.scss */
 header .tagline {
-  font-family: 'Quicksand', serif;
-  font-weight: 300;
-  margin-bottom: 2em;
-  text-align: center;
-  text-transform: uppercase;
-}
-/* line 28, ../scss/_conto-style.scss */
-header #main-logo {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  line-height: 1.2em;
 }
 
-/* line 35, ../scss/_conto-style.scss */
+/* line 43, ../scss/_conto-style.scss */
+#body {
+  margin-top: 6em;
+}
+
+/* line 48, ../scss/_conto-style.scss */
+#sidebar ul {
+  text-align: right;
+  list-style: none;
+  font-style: oblique;
+  color: black;
+  margin-top: 6em;
+}
+/* line 54, ../scss/_conto-style.scss */
+#sidebar ul a {
+  color: black;
+  font-weight: 300;
+}
+/* line 57, ../scss/_conto-style.scss */
+#sidebar ul a:visited {
+  color: black;
+}
+/* line 62, ../scss/_conto-style.scss */
+#sidebar ul#content-types-list li a:hover, #sidebar ul#content-types-list li a:active, #sidebar ul#content-types-list .active {
+  font-weight: 400;
+  color: #f68a1f;
+}
+
+/* line 71, ../scss/_conto-style.scss */
 #content-list article {
-  margin-top: 4em;
+  margin-bottom: 6em;
+}
+
+/* line 76, ../scss/_conto-style.scss */
+footer {
+  background: url("../img/header-bg.png") #3dc7d2;
+  background-blend-mode: color-dodge;
+  color: white;
+}
+/* line 81, ../scss/_conto-style.scss */
+footer .row {
+  padding-top: 10em;
+}
+/* line 84, ../scss/_conto-style.scss */
+footer h1, footer h2, footer h3 {
+  color: white;
+}
+/* line 87, ../scss/_conto-style.scss */
+footer a {
+  color: white;
+  transition: padding .25s;
+  border-radius: .125em;
+  padding: 0 .5em;
+  font-style: oblique;
+}
+/* line 93, ../scss/_conto-style.scss */
+footer a:visited {
+  color: white;
+}
+/* line 96, ../scss/_conto-style.scss */
+footer a:hover {
+  color: #3dc7d2;
+  font-weight: 500;
+  background-color: white;
+  padding: .5em .5em;
+  font-style: normal;
+  transition: padding .25s;
+}
+/* line 106, ../scss/_conto-style.scss */
+footer ul {
+  margin-top: 1em;
+  list-style: none;
+  line-height: 2.5em;
+}
+/* line 111, ../scss/_conto-style.scss */
+footer .credit-line {
+  font-weight: 300;
+  font-size: 140%;
+}
+/* line 114, ../scss/_conto-style.scss */
+footer .credit-line span.cc {
+  font-style: normal;
+  font-family: "Creative Commons";
 }
 
 /* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -4770,8 +4868,6 @@ label.error {
 /* line 113, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
 .joyride-tip-guide h1,
 .joyride-tip-guide h2,
-.joyride-tip-guide header .tagline,
-header .joyride-tip-guide .tagline,
 .joyride-tip-guide h3,
 .joyride-tip-guide h4,
 .joyride-tip-guide h5,
@@ -5405,16 +5501,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 /* line 61, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel h1, .panel h2, .panel header .tagline, header .panel .tagline, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
   color: #333333;
 }
 /* line 68, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel h1, .panel h2, .panel header .tagline, header .panel .tagline, .panel h3, .panel h4, .panel h5, .panel h6 {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
   line-height: 1;
   margin-bottom: 0.625rem;
 }
 /* line 70, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel h1.subheader, .panel h2.subheader, .panel header .subheader.tagline, header .panel .subheader.tagline, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
   line-height: 1.4;
 }
 /* line 82, ../bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -5436,16 +5532,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 /* line 61, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel.callout h1, .panel.callout h2, .panel.callout header .tagline, header .panel.callout .tagline, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout li, .panel.callout dl {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout li, .panel.callout dl {
   color: #333333;
 }
 /* line 68, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel.callout h1, .panel.callout h2, .panel.callout header .tagline, header .panel.callout .tagline, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
   line-height: 1;
   margin-bottom: 0.625rem;
 }
 /* line 70, ../bower_components/foundation/scss/foundation/components/_panels.scss */
-.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout header .subheader.tagline, header .panel.callout .subheader.tagline, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
   line-height: 1.4;
 }
 /* line 84, ../bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -6674,13 +6770,13 @@ meta.foundation-mq-topbar {
   font-size: 16px;
 }
 /* line 204, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .name h1, .top-bar .name h2, .top-bar .name header .tagline, header .top-bar .name .tagline, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
+.top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
   line-height: 2.8125rem;
   font-size: 1.0625rem;
   margin: 0;
 }
 /* line 208, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name header .tagline a, header .top-bar .name .tagline a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   font-weight: normal;
   color: #FFFFFF;
   width: 75%;
@@ -7559,7 +7655,6 @@ ol,
 li,
 h1,
 h2,
-header .tagline,
 h3,
 h4,
 h5,
@@ -7614,7 +7709,7 @@ p aside {
 
 /* Default header styles */
 /* line 252, ../bower_components/foundation/scss/foundation/components/_type.scss */
-h1, h2, header .tagline, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: italic;
@@ -7625,7 +7720,7 @@ h1, h2, header .tagline, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 /* line 262, ../bower_components/foundation/scss/foundation/components/_type.scss */
-h1 small, h2 small, header .tagline small, h3 small, h4 small, h5 small, h6 small {
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
@@ -7637,7 +7732,7 @@ h1 {
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
-h2, header .tagline {
+h2 {
   font-size: 1.6875rem;
 }
 
@@ -7877,7 +7972,7 @@ blockquote p {
 
 @media only screen and (min-width: 40.063em) {
   /* line 455, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  h1, h2, header .tagline, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 
@@ -7887,7 +7982,7 @@ blockquote p {
   }
 
   /* line 457, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  h2, header .tagline {
+  h2 {
     font-size: 2.3125rem;
   }
 
@@ -7985,14 +8080,13 @@ blockquote p {
   /* line 507, ../bower_components/foundation/scss/foundation/components/_type.scss */
   p,
   h2,
-  header .tagline,
   h3 {
     orphans: 3;
     widows: 3;
   }
 
   /* line 514, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  h2, header .tagline,
+  h2,
   h3 {
     page-break-after: avoid;
   }
@@ -8060,14 +8154,14 @@ blockquote p {
   position: relative;
 }
 /* line 169, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.tab-bar h1, .tab-bar h2, .tab-bar header .tagline, header .tab-bar .tagline, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
+.tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
   color: #FFFFFF;
   font-weight: bold;
   line-height: 2.8125rem;
   margin: 0;
 }
 /* line 175, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.tab-bar h1, .tab-bar h2, .tab-bar header .tagline, header .tab-bar .tagline, .tab-bar h3, .tab-bar h4 {
+.tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
   font-size: 1.125rem;
 }
 
