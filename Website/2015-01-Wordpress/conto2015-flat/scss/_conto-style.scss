@@ -1,3 +1,23 @@
+/* 
+				     __
+				    /\/\
+
+   I'M MATTHEW CONTO AND WELCOME TO CSS.
+   ======
+   © 2015 for matthewconto.com
+
+   Proudly made with:
+   - Foundation 5
+   - SASS
+   - Compass
+   - CodeKit
+
+   Find out more about this at matthewconto.com/XXX
+
+
+ */
+ 
+
 header {
 	min-height: 100%;
 	background: url("../img/header-bg.png") $conto-orange;
@@ -27,6 +47,9 @@ header {
 	}
 
 	h1 {
+		@media #{$small-only} {
+			font-size: 3em;
+		}
 		font-size: 4em;
 	}
 
@@ -59,7 +82,10 @@ header {
 				color: black;
 			}
 		}
-		&#content-types-list {
+		#content-types-list {
+			@media #{$small-only} {
+				@inherit .inline-list;
+			}
 			li {
 				margin-bottom: 0;
 			}
@@ -74,6 +100,12 @@ header {
 #content-list {
 	article {
 		margin-bottom: 6em;
+	}
+	article.portfolio-item {
+		.portfolio-center-image {
+			width: rem-calc(300px);
+			padding-top: rem-calc(276px);
+		}
 	}
 }
 
@@ -121,3 +153,28 @@ footer {
 		}
 	}
 }
+
+/* ===============================
+   FEATURES 
+   ===============================
+   */
+
+.color-tag-list {
+	$color-tag-size: rem-calc(24px);
+	display: inline-;
+	margin-left: 100%;
+	margin-right: auto;
+	margin-bottom: 0;
+	height: $color-tag-size;
+	li {
+		width: $color-tag-size;
+		height: $color-tag-size;
+		text-decoration: none;
+		list-style: none;
+		display: inline-block;
+		border-width: 0px;
+		border-color: white;
+		border-style: solid;
+	}
+}
+
