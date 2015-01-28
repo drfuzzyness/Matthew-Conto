@@ -32,3 +32,23 @@ $header-font-style: italic;
 $conto-orange: rgba(246, 138, 31, 1);
 $conto-blue: rgba(61, 199, 210, 1);
 $conto-grey: #404041;
+$conto-white: #eee;
+$primary-color: $conto-orange;
+
+$secondary-color: $conto-grey;
+
+//$body-bg: $conto-white;
+
+$topbar-height: rem-calc(65px);
+$topbar-bg-color: $conto-orange !default;
+$topbar-link-bg-active: $secondary-color;
+/* $topbar-link-bg-hover: $pgn-green !default;
+$topbar-link-color: $pgn-grey;
+$topbar-link-color-hover: $pgn-grey;
+$topbar-link-color-active: $pgn-grey;
+$topbar-link-color-active-hover: $pgn-grey;
+$topbar-dropdown-bg: white;
+$topbar-link-color-hover: $pgn-grey; */
+
+$topbar-link-text-transform: uppercase;
+$topbar-link-weight: 700;

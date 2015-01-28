@@ -20,6 +20,12 @@
 
 header {
 	min-height: 100%;
+	&.half-header {
+		min-height: 50%;
+		.row .columns .row {
+			margin-top: 15%;
+		}
+	}
 	background: url("../img/header-bg.png") $conto-orange;
 	background-blend-mode: color-dodge;
 
@@ -72,7 +78,8 @@ header {
 		text-align: right;
 		font-style: oblique;
 		color: black;
-		margin-top: 6em;
+		margin-top: 0em;
+
 
 		a {
 			color: black;
@@ -102,9 +109,96 @@ header {
 		margin-bottom: 6em;
 	}
 	article.portfolio-item {
+		// Are you ready for terrible positioning code to get the cool effect? I'm not.
 		.portfolio-center-image {
+			display: inline-block;
 			width: rem-calc(300px);
-			padding-top: rem-calc(276px);
+			height: rem-calc(300px);
+			overflow: hidden;
+
+			border: 0 1px 0 0 solid $conto-grey;
+
+			h2 {
+				color: white;
+			}
+
+			.color-tag-list {
+				position: relative;
+				left: rem-calc(10px);
+				bottom: rem-calc(276px); 
+			}		
+		}
+
+		ul.dates {
+			list-style: none;
+			display: list;
+
+			height: rem-calc(300px);
+			border-right: 1px solid $conto-grey;
+			padding-right: 1rem;
+			margin-right: 1rem;
+			
+			li {
+				font-style: oblique;
+				color: $conto-grey;
+				@media #{$medium-up} {
+					//display: inline;
+					text-align: right;
+
+				}
+			}
+			
+			.start-date  {
+				@media #{$medium-up} {
+					
+				}
+
+			}
+			.end-date {
+				@media #{$medium-up} {
+					//width: 5rem;
+					margin-top: rem-calc(250px);
+				}
+			}
+		}
+	}
+}
+
+.blogpost {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	.row .columns {
+		
+		a .title {
+			@media #{$medium-up} {
+				//text-align: right;
+			}
+			color: $conto-blue;
+			font-weight: 400;
+			text-transform: uppercase;
+			line-height: 1em;
+			//margin-bottom: 1em;
+			strong {
+				color: $conto-orange;
+				font-style: normal;
+				font-weight: 500;
+			}
+			border-bottom: rem-calc(2px) solid $conto-orange;
+		}
+		.date {
+			
+			color: $conto-blue;
+			font-weight: 400;
+			font-style: italic;
+			margin-bottom: 2rem;
+			display: inline-block;
+			a {
+				text-transform: uppercase;
+				font-style: normal;
+				font-weight: 500;
+				color: $conto-orange;
+			}
+
 		}
 	}
 }
@@ -115,7 +209,7 @@ footer {
 
 	color: white;
 	.row {
-		padding-top: 10em;
+		padding-top: 5rem;
 	}
 	h1, h2, h3 {
 		color: white;
@@ -155,15 +249,42 @@ footer {
 }
 
 /* ===============================
+   GENERAL 
+   ===============================
+*/
+
+.blue {
+	color: $conto-blue;
+}
+
+.orange {
+	color: $conto-orange;
+}
+
+.caps {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+h2 strong {
+	font-style: normal;
+}
+
+.tight {
+	line-height: 1em;
+	margin-bottom: 2em;
+}
+
+
+/* ===============================
    FEATURES 
    ===============================
-   */
+*/
 
 .color-tag-list {
 	$color-tag-size: rem-calc(24px);
-	display: inline-;
-	margin-left: 100%;
-	margin-right: auto;
+	display: inline;
+	margin-left: 0;
 	margin-bottom: 0;
 	height: $color-tag-size;
 	li {
@@ -175,6 +296,45 @@ footer {
 		border-width: 0px;
 		border-color: white;
 		border-style: solid;
+	}
+}
+
+.thick-list {
+	list-style: none;
+	margin-left: 0 !important;
+	li {
+		//margin: 0;
+		margin-bottom: 1rem;
+		a {
+			padding: 1rem;
+			display: block;
+			color: white;
+			background-color: $conto-blue;
+			transition: background-color .4s;
+			h2 {
+				color: white;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 1.5em;
+				font-style: normal;
+				@media #{$medium-up} {
+					display: inline;
+				}
+			}
+			.date {
+				@media #{$medium-up} {
+					float: right;
+					display: inline;
+				}
+				display: block;
+				margin-top: .25rem;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+			&:hover, &:active, .active {
+				background-color: $conto-grey;
+			}
+		}
 	}
 }
 
