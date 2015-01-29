@@ -6196,33 +6196,44 @@ header {
 
 #content-list article {
   margin-bottom: 6em; }
-#content-list article.portfolio-item .portfolio-center-image {
+
+.portfolio-item .portfolio-center-image {
   display: inline-block;
   width: 18.75rem;
   height: 18.75rem;
   overflow: hidden;
   border: 0 1px 0 0 solid #404041; }
-  #content-list article.portfolio-item .portfolio-center-image h2 {
-    color: white; }
-  #content-list article.portfolio-item .portfolio-center-image .color-tag-list {
+  .portfolio-item .portfolio-center-image .title {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem; }
+  .portfolio-item .portfolio-center-image .color-tag-list {
     position: relative;
     left: 0.625rem;
     bottom: 17.25rem; }
-#content-list article.portfolio-item ul.dates {
-  list-style: none;
-  display: list;
-  height: 18.75rem;
-  border-right: 1px solid #404041;
-  padding-right: 1rem;
-  margin-right: 1rem; }
-  #content-list article.portfolio-item ul.dates li {
-    font-style: oblique;
-    color: #404041; }
-    @media only screen and (min-width: 40.063em) {
-      #content-list article.portfolio-item ul.dates li {
+@media only screen and (max-width: 40em) {
+  .portfolio-item ul.dates {
+    list-style: none; }
+    .portfolio-item ul.dates li {
+      display: inline; } }
+@media only screen and (min-width: 40.063em) {
+  .portfolio-item ul.dates {
+    display: list;
+    height: 18.75rem;
+    border-right: 1px solid #404041;
+    padding-right: 1rem;
+    margin-right: 1rem; }
+    .portfolio-item ul.dates li {
+      font-style: oblique;
+      color: #404041; } }
+    @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
+      .portfolio-item ul.dates li {
         text-align: right; } }
-  @media only screen and (min-width: 40.063em) {
-    #content-list article.portfolio-item ul.dates .end-date {
+@media only screen and (min-width: 40.063em) {
+    .portfolio-item ul.dates .end-date {
       margin-top: 15.625rem; } }
 
 .blogpost {
@@ -6249,6 +6260,20 @@ header {
       font-style: normal;
       font-weight: 500;
       color: #f68a1f; }
+
+.featured-content {
+  padding-top: 5rem;
+  padding-bottom: 15rem; }
+  .featured-content.black-background {
+    background-color: black;
+    color: white; }
+    .featured-content.black-background h1, .featured-content.black-background h2, .featured-content.black-background h3, .featured-content.black-background h4, .featured-content.black-background h5, .featured-content.black-background h6 {
+      color: white; }
+  .featured-content.grey-background {
+    background-color: #222;
+    color: white; }
+    .featured-content.grey-background h1, .featured-content.grey-background h2, .featured-content.grey-background h3, .featured-content.grey-background h4, .featured-content.grey-background h5, .featured-content.grey-background h6 {
+      color: white; }
 
 footer {
   background: url("../img/header-bg.png") #3dc7d2;
@@ -6283,6 +6308,20 @@ footer {
     footer .credit-line span.cc {
       font-style: normal;
       font-family: "Creative Commons"; }
+  footer nav {
+    background-color: #3dc7d2 !important; }
+    footer nav ul {
+      background-color: #3dc7d2 !important; }
+      footer nav ul li {
+        background-color: #3dc7d2 !important; }
+    footer nav section {
+      background-color: #3dc7d2 !important; }
+      footer nav section ul {
+        background-color: #3dc7d2 !important; }
+        footer nav section ul li {
+          background-color: #3dc7d2 !important; }
+          footer nav section ul li a {
+            background-color: #3dc7d2 !important; }
 
 /* ===============================
    GENERAL 

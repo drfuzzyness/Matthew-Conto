@@ -108,32 +108,47 @@ header {
 	article {
 		margin-bottom: 6em;
 	}
-	article.portfolio-item {
-		// Are you ready for terrible positioning code to get the cool effect? I'm not.
-		.portfolio-center-image {
-			display: inline-block;
-			width: rem-calc(300px);
-			height: rem-calc(300px);
-			overflow: hidden;
+}
 
-			border: 0 1px 0 0 solid $conto-grey;
+.portfolio-item {
+	// Are you ready for terrible positioning code to get the cool effect? I'm not.
+	$height-of-box: rem-calc(300px);
+	.portfolio-center-image {
+		
+		display: inline-block;
+		width: $height-of-box;
+		height: $height-of-box;
+		overflow: hidden;
 
-			h2 {
-				color: white;
-			}
+		border: 0 1px 0 0 solid $conto-grey;
 
-			.color-tag-list {
-				position: relative;
-				left: rem-calc(10px);
-				bottom: rem-calc(276px); 
-			}		
+		.title {
+			color: white;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2rem;
+			text-transform: uppercase;
+			margin: 2rem;
 		}
 
-		ul.dates {
-			list-style: none;
-			display: list;
+		.color-tag-list {
+			position: relative;
+			left: rem-calc(10px);
+			bottom: $height-of-box - rem-calc(24px); 
+		}		
+	}
 
-			height: rem-calc(300px);
+	ul.dates {
+		@media #{$small-only} {
+			list-style: none;
+			li{
+				display: inline;
+			}
+		}
+		@media #{$medium-up} {
+			
+			display: list;
+			height: $height-of-box;
 			border-right: 1px solid $conto-grey;
 			padding-right: 1rem;
 			margin-right: 1rem;
@@ -155,10 +170,10 @@ header {
 
 			}
 			.end-date {
-				@media #{$medium-up} {
-					//width: 5rem;
-					margin-top: rem-calc(250px);
-				}
+			
+				//width: 5rem;
+				margin-top: $height-of-box - rem-calc(50px);
+			
 			}
 		}
 	}
@@ -199,6 +214,25 @@ header {
 				color: $conto-orange;
 			}
 
+		}
+	}
+}
+
+.featured-content {
+	padding-top: 5rem;
+	padding-bottom: 15rem;
+	&.black-background {
+		background-color: black;
+		color: white;
+		h1, h2, h3, h4, h5, h6 {
+			color: white;
+		}
+	}
+	&.grey-background {
+		background-color: $conto-darkgrey;
+		color: white;
+		h1, h2, h3, h4, h5, h6 {
+			color: white;
 		}
 	}
 }
@@ -244,6 +278,27 @@ footer {
 		span.cc {
 			font-style: normal; 
 			font-family: $font-creative-commons;
+		}
+	}
+	nav {
+		background-color: $conto-blue !important;
+		ul{
+			background-color: $conto-blue !important;
+			li{
+				background-color: $conto-blue !important;
+			}
+		}
+		section {
+			background-color: $conto-blue !important;
+			ul{
+				background-color: $conto-blue !important;
+				li{
+					background-color: $conto-blue !important;
+					a {
+						background-color: $conto-blue !important;
+					}
+				}
+			}
 		}
 	}
 }
