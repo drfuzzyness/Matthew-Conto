@@ -1,20 +1,25 @@
 /* 
-				     __
-				    /\/\
+                       __  
+                      /\/\ 
 
-   I'M MATTHEW CONTO AND WELCOME TO CSS.
-   ======
-   © 2015 for matthewconto.com
+   I'M MATTHEW CONTO AND WELCOME TO MY CSS.
+   =========================================
 
-   Proudly made with:
+   (cc)(atr)(nc) 2015 for matthewconto.com
+
+   ##Proudly made with:
    - Foundation 5
    - SASS
    - Compass
    - CodeKit
 
-   Find out more about this at matthewconto.com/XXX
+   ##Honorably using:
+   - Fira Sans
 
-
+   Find out more about this at matthewconto.com/website
+  
+  "There's a hole in the _sky_ through which thing can _fly_"
+            --GLADOS
  */
  
 
@@ -36,13 +41,13 @@ $conto-darkgrey: #222;
 $conto-white: #eee;
 $primary-color: $conto-orange;
 
-$secondary-color: $conto-grey;
+//$secondary-color: $conto-grey;
 
 //$body-bg: $conto-white;
 
 $topbar-height: rem-calc(65px);
 $topbar-bg-color: $conto-orange !default;
-$topbar-link-bg-active: $secondary-color;
+$topbar-link-bg-active: $conto-grey;
 /* $topbar-link-bg-hover: $pgn-green !default;
 $topbar-link-color: $pgn-grey;
 $topbar-link-color-hover: $pgn-grey;

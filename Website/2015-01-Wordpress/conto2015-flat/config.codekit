@@ -3575,6 +3575,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/eagleimperium.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59000,
+		"inputAbbreviatedPath": "\/img\/eagleimperium.png",
+		"outputAbbreviatedPath": "\/img\/eagleimperium.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/header-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3582,6 +3593,17 @@
 		"initialSize": 304,
 		"inputAbbreviatedPath": "\/img\/header-bg.png",
 		"outputAbbreviatedPath": "\/img\/header-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/pgn.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6137,
+		"inputAbbreviatedPath": "\/img\/pgn.png",
+		"outputAbbreviatedPath": "\/img\/pgn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
