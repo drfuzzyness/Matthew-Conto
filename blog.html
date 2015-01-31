@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Conto</title>
+
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300italic,400,500,400italic' rel='stylesheet' type='text/css'>
+    <link href="stylesheet" href="">
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <header class="half-header">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="medium-10 columns text-right top">
+              <h1>I'm Matthew Conto</h1>
+              <!-- <p class="tagline">You're poking around my website.</p> -->
+              <p><a href="https://github.com/drfuzzyness">GitHub</a> - <a href="https://twitter.com/drfuzzyness">Twitter</a> - <a href="https://www.linkedin.com/in/conto">LinkedIn</a></p>
+            </div>
+            <div class="medium-2 hide-for-small columns">
+              <img src="img/logo-white.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="header-nav" class="sticky">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="http://matthewconto.com">Matthew Conto</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <!-- <ul class="left">
+          </ul> -->
+          <ul class="right">
+            <li>
+              <a href="http://matthewconto.com/portfolio" target="_blank">Portfolio</a>
+            </li>
+            <li>
+              <a href="http://matthewconto.com/blog" target="_blank">Blog</a>
+            </li>
+            <li>
+              <a href="http://matthewconto.com/contact" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- Each entry is in charge of its own containers for extensibility. -->
+    <article class="blogpost">
+      <div class="row">
+        <div class="medium-12 medium-centered columns">
+          <a href=""><h1 class="title">Ideas for a better <strong>Digital Scrapbook</strong></h1></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-8 medium-centered columns">
+          
+          <span class="date"><a href="">February 4th, 2015</a> - from a series on <a href="">Notetaking Apps</a></span>
+          <p>The key to this note taking app is seamless workflow.</p>
+
+          <h2 id="awesomebarextended">AwesomeBar extended</h2>
+
+          <p>The Firefox AwesomeBar is pretty self explanatory. When I had a stint using Google Chrome, the URL bar always bothered me as it favored search results and <em>exact</em> URLs from my History over the URL that I wanted to go to. <kbd>trello</kbd> would be auto completed to something like <kbd>https://trello.com/b/zttawhOT/</kbd> instead of <kbd>https://trello.com</kbd>. It wasn&#8217;t fun for me. With that in mind, fiddling with the default behavior of the AwesomeBar is dangerous.</p>
+
+          <h2 id="keywords">Keywords</h2>
+
+          <p>My first thought would be to require a keyword to initiate the <a href="http://notational.net/">Notational Velocity</a> style search/new note interface. It solves the issue of separating web requests like <kbd>trello</kbd> from note requests like <kbd>ideas for band names</kbd>. As easy as the keyword solution would be to implement, it feels lackluster. It fails my dream of a seamless gateway between the web and the mind.</p>
+
+          <h2 id="themostobvious">The Most Obvious</h2>
+
+          <p>And then it hit me. Duh, this&#8217;ll just work right at the start! The AwesomeBar&#8217;s engineers, in deciding what a user might use the bar for included <em>bookmark support</em>! If you start to search for <kbd>trello</kbd>, you&#8217;ll be confronted with any bookmarks you have that partially match the string <kbd>trello</kbd>! The AwesomeBar handles what results to display first, but the result is visible as a bookmark!</p>
+
+          <figure>
+          <img src="http://i.imgur.com/IFxNZ9R.png" alt="Firefoxs AwesomeBar can utilize the tags, title, and URL when searching through bookmarks." />
+          <figcaption>Firefox&#8217;s AwesomeBar can utilize the tags, title, and URL when searching through bookmarks.</figcaption></figure>
+
+
+
+          <p>The next step is to implement new note creation. The keyword solution remains the easiest to handle indifference Notational Velocity has towards search and note creation. There are several solutions to handle this creation.</p>
+
+          <ul>
+          <li>Searches that don&#8217;t exactly match a note show a link to create new note
+
+          <ul>
+          <li>Extra action to create note</li>
+          </ul></li>
+          <li>Press a modifier <kbd>shift+enter</kbd> to create a new note with the title from the URL bar
+
+          <ul>
+          <li>Separates notes from the URL and could slow down the user creating a note as they have to memorize a shortcut.</li>
+          <li>Not a bad solution, but not <em>instantly</em> understandable.</li>
+          </ul></li>
+          </ul>
+
+          <p>This will require more thought. </p>
+
+          <div class="date"><a href="">Respond</a> on Twitter - <a href="">Like</a> via Wordpress</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="blogpost">
+      <div class="row">
+        <div class="medium-12 medium-centered columns">
+          <a href=""><h1 class="title">A way to make <strong>bookmarks useful</strong></h1></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-8 medium-centered columns">
+          <span class="date"><a href="">January 26th, 2015</a> - from a series on <a href="">Notetaking Apps</a></span>
+
+          <p>I&#8217;ve don&#8217;t have a good how I&#8217;ll actually make this, but here goes.</p>
+
+          <h2 id="bookmarksasdata">Bookmarks as Data</h2>
+
+          <p>Firefox Bookmarks have a URL, a hierarchy, and a <em>notes</em> section. I can&#8217;t imagine that anyone actually uses the notes section, but what if someone did? What if, you stuck an <strong>entire note taking app inside of a bookmark</strong>. Just simple Markdown to format, with a specialized URL to handle viewing the bookmark as a note.</p>
+
+          <h2 id="itsbeendone">It&#8217;s been done</h2>
+
+          <p><a href="http://topaddon.com/index.html">QuickFox</a> is, to be frank, a pretty lame app. It looks like it was pulled out of the 2005 Windows XP school of application design with the content taking the full width of the screen and relying on a window hovering above your Firefox tabs. Even if you try to load the addon as a tab, the addon relies on its own internal tabs. But even with that said, it&#8217;s a <em>truly brilliant idea</em>. Your notes are stored as bookmarks, thereby making sync a simple and unobtrusive experience as your browser handles it in the background through whatever service you want.</p>
+
+          <p>I just want to take that one step further and turn it into full blown bookmark/scrapbooking system along the lines of Evernote.</p>
+
+          <h2 id="themailboxappofnote-taking">The Mailbox App of Note-taking</h2>
+
+          <p>Note-taking isn&#8217;t that glamorous. For the longest time I&#8217;ve relied on Evernote to handle formatting and sync and it works pretty well. It provides more metadata than I could ask for with support for authors, tags, even location. What it doesn&#8217;t do is offer a simple service. In fact, it&#8217;s a fucking mess.</p>
+
+          <p>If you &#8216;clip&#8217; a website into Evernote, you&#8217;re stuck with the silly formatting and bastardized data structure that the site used. My gripe isn&#8217;t with the algorithms they&#8217;re using to harvest the content, but the presentation of the content. <em>Personally</em>, when I take notes, I want my result to be clean and to-the-point. Basically, I want some nice clean Markdown I can turn into HTML if it needs to be styled. I don&#8217;t want minute control over the fonts, the line-height, the colors for each individual note. I want one style and appropriate formatting.</p>
+
+          <h2 id="browsersandnotationalvelocity">Browsers and Notational Velocity</h2>
+
+          <p><a href="http://notational.net/">Notational Velocity is</a> is brilliant. <a href="http://brettterpstra.com/projects/nvalt/">nvALT</a> is, so far, my favorite brand of it with awesome Markdown support, custom font display support, and Simplenote. The key to Notational Velocity is its reliance on the search bar, much like <em>a certain</em> other piece of critical software, the browser URL bar.</p>
+
+          <h4 id="whatifthebrowserurlbarcouldnotonlybethegatewaytothewebbutthegatewaytoyourmemories.">What if the browser URL bar could not only be the gateway to the web, but the gateway to your memories.</h4>
+
+          <p>Pretty lofty, right? Every startup needs a tagline like that. So imagine your reading list merged with your notes. A certain workflow that encourages documentation of thoughts.</p>
+
+
+        </div>
+      </div>
+    </article>
+
+    <section class="end-of-page">
+      <div class="row">
+        <div class="">
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="medium-3 small-5 medium-offset-2 columns">
+          <img src="img/logo-white.svg" alt="">
+        </div>
+        <div class="medium-4 columns left">
+          <div class="small-6 columns">
+            <ul class="">
+              <li><a href="https://twitter.com/drfuzzyness">Twitter</a></li>
+              <li><a href="http://www.last.fm/user/drfuzzyness">Last.fm</a></li>
+              <li><a href="http://drfuzzyness.tumblr.com/">Tumblr</a></li>
+            </ul>
+          </div>
+          <div class="small-6 small columns">
+            <ul class="">
+              <li><a href="http://www.pinterest.com/drfuzzyness/">Pintrest</a></li>
+              <li><a href="https://github.com/drfuzzyness">Github</a></li>
+              <li><a href="http://open.spotify.com/user/drfuzzyness">Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-12 medium-centered columns text-center credit-line">
+          <p><span class="cc" title="Creative Commons">c</span><span class="cc" title="Attribute">b</span><span class="cc" title="Non Commerical">n</span> 2015 Matthew Conto</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
