@@ -195,15 +195,17 @@ header {
 			}
 			color: $conto-blue;
 			font-weight: 400;
-			text-transform: uppercase;
+			
 			line-height: 1em;
 			//margin-bottom: 1em;
 			strong {
+				text-transform: uppercase;
 				color: $conto-orange;
 				font-style: normal;
 				font-weight: 500;
 			}
-			border-bottom: rem-calc(2px) solid $conto-orange;
+			text-align: center;
+			//border-bottom: rem-calc(2px) solid $conto-orange;
 		}
 		.date {
 			
@@ -332,9 +334,34 @@ h2 {
 	font-weight: 300;
 }
 
+h3, h4 {
+	font-weight: 300;
+	color: $conto-blue;
+}
+
 .tight {
 	line-height: 1em;
 	margin-bottom: 2em;
+}
+
+::selection {
+    color: white;
+    background: $conto-orange;
+}
+
+::-moz-selection { // Code for Firefox
+    color: white;
+    background: $conto-orange;
+}
+
+a::selection{
+	color: white;
+    background: $conto-blue;
+}
+
+a::-moz-selection { // Code for Firefox
+    color: white;
+    background: $conto-blue;
 }
 
 
