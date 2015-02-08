@@ -4,7 +4,7 @@
 .DS_Store
 /stylesheets/*
 .scss
-.codekit
+*.codekit
 
 # OSX
 .DS_Store

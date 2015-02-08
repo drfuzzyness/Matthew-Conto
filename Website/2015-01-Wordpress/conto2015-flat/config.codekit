@@ -3584,7 +3584,7 @@
 		"outputAbbreviatedPath": "\/img\/eagleimperium.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/header-bg.png": {
 		"fileType": 32768,
