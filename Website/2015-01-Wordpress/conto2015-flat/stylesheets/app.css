@@ -4541,9 +4541,9 @@ meta.foundation-mq-topbar {
     .top-bar.expanded .title-area {
       background: #f68a1f; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: white; }
       .top-bar.expanded .toggle-topbar a span::after {
-        box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888; }
+        box-shadow: 0 0 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white; }
 
 .top-bar-section {
   left: 0;
@@ -4564,7 +4564,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: #e57709; }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -4663,7 +4663,7 @@ meta.foundation-mq-topbar {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      background: #e57709;
+      background: #333333;
       color: #FFFFFF; }
     .top-bar-section ul li.active > a {
       background: #404041;
@@ -4792,7 +4792,7 @@ meta.foundation-mq-topbar {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
       background-color: #555555;
-      background: #e57709;
+      background: #333333;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 1.35417rem;
@@ -4800,7 +4800,7 @@ meta.foundation-mq-topbar {
       background: #f68a1f; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: #e57709; }
+        background: #333333; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 1.35417rem;
       line-height: 4.0625rem;
@@ -4901,7 +4901,7 @@ meta.foundation-mq-topbar {
 
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #e57709;
+    background: #333333;
     color: #FFFFFF; }
   .no-js .top-bar-section ul li:active > a {
     background: #404041;
@@ -6137,9 +6137,10 @@ header {
     header.half-header .row .columns .row {
       margin-top: 15%; }
   header.gif-header {
-    background: url("../img/WIRED.gif") #3dc7d2;
+    background: url("../img/MC.gif") #404041;
     background-blend-mode: normal;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center center; }
   header a {
     color: white;
     transition: padding .25s;
