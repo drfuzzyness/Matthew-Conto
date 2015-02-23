@@ -8,6 +8,11 @@ header {
 	}
 	background: url("../img/header-bg.png") $conto-orange;
 	background-blend-mode: color-dodge;
+	&.gif-header {
+		background: url("../img/WIRED.gif") $conto-blue;
+		background-blend-mode: normal;
+		background-size: cover;
+	}
 
 	color: white;
 	a {
