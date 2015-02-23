@@ -3,22 +3,23 @@
                       /\/\ 
 
    I'M MATTHEW CONTO AND WELCOME TO MY CSS.
-   =========================================
+   ========================================
 
    (cc)(atr)(nc) 2015 for matthewconto.com
 
-   ##Proudly made with:
+   ## Proudly made with:
    - Foundation 5
    - SASS
    - Compass
    - CodeKit
+   - some pizza < )
 
-   ##Honorably using:
+   ## Honorably using:
    - Fira Sans
 
    Find out more about this at matthewconto.com/website
   
-  "There's a hole in the _sky_ through which thing can _fly_"
+  "There's a hole in the _sky_ through which things can _fly_"
             --GLADOS
  */
 @font-face {
@@ -6135,6 +6136,10 @@ header {
     min-height: 50%; }
     header.half-header .row .columns .row {
       margin-top: 15%; }
+  header.gif-header {
+    background: url("../img/WIRED.gif") #3dc7d2;
+    background-blend-mode: normal;
+    background-size: cover; }
   header a {
     color: white;
     transition: padding .25s;
