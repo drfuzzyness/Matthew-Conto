@@ -47,18 +47,16 @@ $primary-color: $conto-orange;
 //$body-bg: $conto-white;
 
 $topbar-height: rem-calc(65px);
-$topbar-bg-color: $conto-orange !default;
-$topbar-link-bg-active: $conto-grey;
+$topbar-bg-color: white !default;
+
+$topbar-link-bg-active: $conto-orange;
 $topbar-dropdown-bg: scale-color($topbar-bg-color, $lightness: -14%);
-//$topbar-link-bg-hover: $oil;
-$topbar-menu-link-color-toggled: white;
-$topbar-menu-icon-color-toggled: white;
-/*$topbar-link-color: $pgn-grey;
-$topbar-link-color-hover: $pgn-grey;
-$topbar-link-color-active: $pgn-grey;
-$topbar-link-color-active-hover: $pgn-grey;
-$topbar-dropdown-bg: white;
-$topbar-link-color-hover: $pgn-grey; */
+$topbar-link-bg-hover: $conto-orange;
+$topbar-link-color: $conto-orange;
+
+$topbar-menu-link-color: $topbar-link-color;
+$topbar-menu-icon-color: $topbar-menu-link-color;
+
 
 $topbar-link-text-transform: uppercase;
 $topbar-link-weight: 700;

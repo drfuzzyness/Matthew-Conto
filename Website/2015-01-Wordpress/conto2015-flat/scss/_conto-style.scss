@@ -127,49 +127,50 @@ header {
 		}		
 	}
 
-	ul.dates {
-		@media #{$small-only} {
-			list-style: none;
-			li{
-				display: inline;
-			}
-		}
-		@media #{$medium-up} {
+	// ul.dates {
+	// 	@media #{$small-only} {
+	// 		list-style: none;
+	// 		li{
+	// 			display: inline;
+	// 		}
+	// 	}
+	// 	@media #{$medium-up} {
 			
-			display: list;
-			height: $height-of-box;
-			border-right: 1px solid $conto-grey;
-			padding-right: 1rem;
-			margin-right: 1rem;
+	// 		display: list;
+	// 		height: $height-of-box;
+	// 		border-right: 1px solid $conto-grey;
+	// 		padding-right: 1rem;
+	// 		margin-right: 1rem;
 			
-			li {
-				list-style: none;
-				font-style: oblique;
-				color: $conto-grey;
-				@media #{$medium-up} {
-					//display: inline;
-					text-align: right;
+	// 		li {
+	// 			list-style: none;
+	// 			font-style: oblique;
+	// 			color: $conto-grey;
+	// 			@media #{$medium-up} {
+	// 				//display: inline;
+	// 				text-align: right;
 
-				}
-			}
+	// 			}
+	// 		}
 			
-			.start-date  {
-				@media #{$medium-up} {
+	// 		.start-date  {
+	// 			@media #{$medium-up} {
 					
-				}
+	// 			}
 
-			}
-			.end-date {
+	// 		}
+	// 		.end-date {
 			
-				//width: 5rem;
-				margin-top: $height-of-box - rem-calc(50px);
+	// 			//width: 5rem;
+	// 			margin-top: $height-of-box - rem-calc(50px);
 			
-			}
-		}
-	}
+	// 		}
+	// 	}
+	// }
 
 	div.content {
 		height: $height-of-box;
+		// padding-left: 3em;
 		//overflow: scroll;
 		.read-more {
 			@extend .button;
@@ -327,6 +328,16 @@ footer {
 
 .orange {
 	color: $conto-orange;
+}
+
+.grey {
+	color: $conto-grey;
+}
+
+.compact {
+	font-weight: 400;
+	font-style: bold;
+	font-size: rem-calc(14px);
 }
 
 .caps {
