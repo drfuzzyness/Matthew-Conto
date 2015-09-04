@@ -1,6 +1,6 @@
-/* 
-                       __  
-                      /\/\ 
+/*
+                       __
+                      /\/\
 
    I'M MATTHEW CONTO AND WELCOME TO MY CSS.
    ========================================
@@ -18,7 +18,7 @@
    - Fira Sans
 
    Find out more about this at matthewconto.com/website
-  
+
   "There's a hole in the _sky_ through which things can _fly_"
             --GLADOS
  */
@@ -5102,14 +5102,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: italic;
-  color: #222222;
+  color: #f68a1f;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: #f9b36d;
     line-height: 0; }
 
 h1 {
@@ -5132,7 +5132,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #f9b36d;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -5244,17 +5244,17 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #f8a553; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #f8a553; }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #f9b36d; }
 
 /* Microformats */
 .vcard {
@@ -6123,12 +6123,16 @@ th.hide-for-touch {
     display: table-cell !important; } }
 header {
   min-height: 100%;
-  background: url("../img/header-bg.png") #f68a1f;
+  background: url("../img/header-bg.png") white;
   background-blend-mode: color-dodge;
-  color: white; }
+  color: #f68a1f; }
   header.half-header {
     min-height: 50%; }
     header.half-header .row .columns .row {
+      margin-top: 15%; }
+  header.quarter-header {
+    min-height: 25%; }
+    header.quarter-header .row .columns .row {
       margin-top: 15%; }
   header.gif-header {
     background: url("../img/MC.gif") #404041;
@@ -6136,19 +6140,21 @@ header {
     background-size: cover;
     background-position: center center; }
   header a {
-    color: white;
-    transition: padding .25s;
+    color: #f68a1f;
+    transition: padding .25s, border .3s;
     border-radius: .125em;
+    border: solid 1px transparent;
     padding: 0 .5em;
     font-style: oblique; }
     header a:visited {
-      color: white; }
+      color: inherit; }
     header a:hover {
       color: #f68a1f;
+      border: solid 1px #f68a1f;
       font-weight: 500;
       background-color: white;
       padding: .5em .5em;
-      transition: padding .25s; }
+      transition: padding .25s, border .3s; }
   header .row .columns .row {
     margin-top: 35%; }
   header h1 {
@@ -6157,7 +6163,7 @@ header {
       header h1 {
         font-size: 3em; } }
   header h1, header h2 {
-    color: white; }
+    color: #f68a1f; }
   header .tagline {
     line-height: 1.2em; }
 
@@ -6210,6 +6216,8 @@ header {
       bottom: 17.25rem; }
   .portfolio-item div.content {
     height: 18.75rem; }
+    .portfolio-item div.content .title {
+      color: black; }
     .portfolio-item div.content .read-more, .portfolio-item div.content .secondary-link {
       font-style: italic;
       position: relative;
@@ -6306,7 +6314,7 @@ footer {
             background-color: #3dc7d2 !important; }
 
 /* ===============================
-   GENERAL 
+   GENERAL
    ===============================
 */
 .blue {
@@ -6356,7 +6364,7 @@ a::-moz-selection {
   background: #3dc7d2; }
 
 /* ===============================
-   FEATURES 
+   FEATURES
    ===============================
 */
 .color-tag-list {
