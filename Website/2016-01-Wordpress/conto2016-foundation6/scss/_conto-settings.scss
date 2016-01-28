@@ -1,0 +1,76 @@
+/*
+                       __
+                      /\/\
+
+   I'M MATTHEW CONTO AND WELCOME TO MY CSS.
+   ========================================
+
+   (cc)(atr)(nc) 2015 for matthewconto.com
+
+   ## Proudly made with:
+   - Foundation 5
+   - SASS
+   - Compass
+   - CodeKit
+   - some pizza < )
+
+   ## Honorably using:
+   - Fira Sans
+
+   Find out more about this at matthewconto.com/website
+
+  "There's a hole in the _sky_ through which things can _fly_"
+            --GLADOS
+ */
+
+
+@font-face {
+  font-family: 'Creative Commons';
+  src: url('../img/cc.ttf'); /* IE6-IE8 */
+}
+
+$font-creative-commons: "Creative Commons";
+$font-family-sans-serif: "Fira Sans", Helvetica, Roboto, Arial, sans-serif;
+$font-family-monospace: "Input Mono", Monaco, Consolas,  monospace;
+
+
+
+$conto-orange: rgba(246, 138, 31, 1);
+$conto-blue: rgba(61, 199, 210, 1);
+$conto-grey: #404041;
+$conto-darkgrey: #222;
+$conto-white: #eee;
+$primary-color: $conto-orange;
+
+$body-font-family: $font-family-sans-serif;
+
+$header-font-style: italic;
+$header-background-color: white;
+$header-font-color: $conto-orange;
+
+//$secondary-color: $conto-grey;
+
+//$body-bg: $conto-white;
+
+$topbar-height: rem-calc(65px);
+$topbar-background: transparent !default;
+$topbar-padding: 0;
+
+$header-sizes: (
+  small: (
+    'h1': 30,
+    'h2': 25,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
