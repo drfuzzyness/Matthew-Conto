@@ -15,11 +15,16 @@ header {
         }
     }
 	&.story-header {
-        min-height: 80%;
-        
-        .row .columns .row {
-			margin-top: 0%;
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        div.row {
+            min-height: 600px;
         }
+        // .row .columns .row {
+		// 	margin-top: 0%;
+        // }
     }
 	&.half-header {
 		min-height: 50%;
@@ -173,8 +178,22 @@ header {
     }
 }
 
+article {
+    font-size: rem-calc(18pt);
+}
+
 #body {
 	margin-top: 6em;
+}
+
+.project-feed {
+	ul.posts {
+		list-style: none;
+		margin: 0;
+		li.post {
+			margin-bottom: rem-calc(32px);
+		}
+	}
 }
 
 #sidebar {
@@ -195,7 +214,7 @@ header {
 		}
 		#content-types-list {
 			@media #{$small-only} {
-				@inherit .inline-list;
+				// @inherit .inline-list;
 			}
 			li {
 				margin-bottom: 0;
@@ -354,6 +373,8 @@ header {
 }
 
 .portfolio-grid {
+    padding-left: rem-calc(32px);
+    padding-right: rem-calc(32px);
     .item {
         margin-bottom: rem-calc(26px);
         a {
@@ -366,7 +387,7 @@ header {
             &:hover, &:active {
                 transition: transform .1s;
                 box-shadow: 0 0 rem-calc(8px) rgba(0, 0, 0, 0.6);
-                transform: scale( 1.1, 1.1 );
+                transform: scale( 1.03, 1.03 );
             }
             
             .graphic{
@@ -537,6 +558,25 @@ footer {
    GENERAL
    ===============================
 */
+
+.button {
+    box-shadow: 0 rem-calc(4px) rem-calc(8px) rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    transition: box-shadow .25s, background-color .25s;
+    &:hover, &:active {
+        box-shadow: 0 rem-calc(4px) rem-calc(12px) rgba(0, 0, 0, 0.5);
+        transition: box-shadow .25s, background-color .25s;
+    }
+}
+
+.button.white {
+    &:hover, &:active {
+        background-color: white;
+        color: $conto-orange !important;
+    }
+    background-color: white;
+    color: black !important;
+}
 
 .page-block {
     padding: 10% 0 10% 0;

@@ -1,23 +1,38 @@
 <!-- @import "templates/head.html" -->
 <!-- @import "templates/sticky-nav.html" -->
-<header class="story-header dark-background" style="background: #75b2dd;">
+<style>
+        .primary-color-bg {
+            background-color: #000;
+        }
+        .story-header {
+            background: url("/img/prerender-strings-web.jpg");
+        }
+        .secondary-color-bg {
+            border-top: none;
+            background-color: #000;
+        }
+</style>
+<header class="story-header dark-background primary-color-bg" style="">
     <div class="row align-justify align-middle">
         <div class="column small-12 medium-6">
-            <img src="img/eagleimperium.png" alt="">
+            <img src="img/benchbirds-logo-white.svg" alt="">
         </div>
         <div class="column text-right">
-            <h2>Eagle Imperium</h2>
-            <p class="tagline">FIRST Robotics Team</p>
+            <h1>Bench with Birds</h1>
+            <p class="tagline">VR game exploring violence in story progression</p>
         </div>
     </div>
 </header>
-<section class="story-subheader" style="background: #69A0C6;">
+<section class="story-subheader secondary-color-bg" style="">
     <div class="row">
+        <!--<div class="column shrink">
+            Context
+        </div>-->
         <div class="column">
-            <h3>Skyline High School</h3>
-            <p>2010-2012, Mentor 2012-2014</p>
+            <h2>Experimental Game Narratives</h2>
+            <p>Fall 2015 at NYU Tandon</p>
         </div>
-        <div class="column shrink">
+        <!--<div class="column shrink">
             <ul class="color-tag-list">
                 <li style="background-color: #75b2dd"></li>
                 <li style="background-color: #bdbec0"></li>
@@ -25,16 +40,21 @@
                 <li style="background-color: #404041"></li>
                 <li style="background-color: #ed1c24"></li>
             </ul>
-        </div>
+        </div>-->
     </div>
 </section>
-<section class="page-block">
-    <div class="row">
-        <div class="column">
-            
-        </div>
+<section class="page-block about">
+    <div class="row align-center">
+        <article class="large-8 medium-10 column">
+            <h2>Designing Suprise</h2>
+            <p>Bench with Birds is a short experimental game for Google Cardboard exploring violence in game story progression. The player is placed into a theatre set of a small artificial park where they feed birds by throwing breadcrumbs using the single button on the headset. After attracting a certain number of birds, the breadcrumbs are replaced by a gun and the player can either shoot the birds or refrain from disrupting the peace. The game concludes with either a credits roll if they shot the gun or a short thesis explaining the nuance behind the choice of violence if they refrained.</p>
+            <p>Designing for Google Cardboard both affords an unprecedented freedom of motion, yet severely limits what is possible visually and interaction wise. The lowfi feeling of the cardboard VR headset helps set a lower standard, but maintaining a playable framerate is exceedingly difficult when rendering 3D on a phone. The input restriction of a single button and head rotation also limits, but I chose to heavily utilize the lack of fidelity in choice a single button presents as the core mechanic of my game. In addition, because the player has freedom to look anywhere, the camera resets during the title sequence so the player doesn’t unintentionally lose orientation. Because the main reveal of Bench with Birds requires the player looking behind them, I use sound effects to draw the player to look behind them at the right time while not forcing the player.</p>
+        </article>
+        
     </div>
 </section>
+
+<!-- @import "templates/project-feed.html" -->
 
 <!-- @import "templates/footer-2015style.html" -->
 <!-- @import "templates/end.html" -->

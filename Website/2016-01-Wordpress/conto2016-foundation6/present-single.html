@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="rgba(0, 0, 0, 1)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthew Conto</title>
 
@@ -15,45 +16,71 @@
 
 <body>
     
+<!-- //@import "templates/presentation-block.html" -->
 <section class="featured-content grey-background">
+<div id="header-nav">
+    <div class="row">
+        <div class="top-bar" id="top-menu">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text ">
+                        <a href="index.html"><img src="img/logo-color.svg" alt="" height="16" width="24"><span class="hide-for-small-only">Matthew Conto</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="portfolio.html">Archive</a>
+                    </li>
+                    <li class="">
+                        <a href="portfolio-article.html">Article</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    
     <div class="row align-center item">
-        <div class="large-12 columns">
-            <!--<div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/qBeI8_QqmXo?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>-->
-            <div>
+        <div class="small-12 columns">
+            <div class='embed-container'>
+                <iframe src='https://www.youtube-nocookie.com/embed/qBeI8_QqmXo?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe>
+            </div>
+            <!--<div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nesciunt cupiditate incidunt distinctio atque
                     perspiciatis ratione debitis esse explicabo nihil odio voluptates officia deleniti, commodi, fuga sit
                     delectus illo corporis.</p>
-            </div>
+            </div>-->
         </div>
         <div class="crumbs small-6 columns">
-            <ul class="breadcrumbs">
+            <!--<ul class="breadcrumbs">
                 <li><a href="#">Classes</a></li>
-                <li><a href="#">3D Animation</a></li>
-                <li class="current"><a href="#">3 Item Drop</a></li>
-            </ul>
+                <li class="current"><a href="#">3D Animation</a></li>
+                <li ><a href="#">3 Item Drop</a></li>
+            </ul>-->
+            <div class="column">
+            <a href="https://github.com/radiatoryang/nyu_studio_spring2015" class="button white">Download</a>
+            <a href="https://github.com/radiatoryang/nyu_studio_spring2015" class="button secondary">GitHub</a>
+        </div>
         </div>
         <div class="blurb small-6 columns">
             <h3>Demo Reel 2015</h3>
-            <span>Adobe AfterEffects</span>
+            <!--<span>Adobe After Effects</span>-->
             <span>May 14th, 2015</span>
         </div>
     </div>
+    <!--<div class="row">
+        
+    </div>-->
     <!--<div class="row description">
         <div></div>
         <h1 ><img class="margin-center" src="img/benchbirds-logo-white.svg" alt=""></h1>
     </div>-->
-
 </section>
 <section id="block-about" class="page-block" name="pgn-legends">
     <div class="row align-center">
         <div class="large-6 medium-10 columns ">
-            <h2>a game about buttons, really</h2>
-            <p>Bench with Birds is a short experimental game for Google Cardboard exploring violence in game story progression.
-                The player is placed into a theatre set of a small artificial park where they feed birds by throwing breadcrumbs
-                using the single button on the headset. After attracting a certain number of birds, the breadcrumbs are replaced
-                by a gun and the player can either shoot the birds or refrain from disrupting the peace. The game concludes
-                with either a credits roll if they shot the gun or a short thesis explaining the nuance behind the choice
-                of violence if they refrained.</p>
+            <h2 class="caps">a game about buttons, really</h2>
+            <p>Bench with Birds is a short experimental game for Google Cardboard exploring violence in game story progression. The player is placed into a theatre set of a small artificial park where they feed birds by throwing breadcrumbs using the single button on the headset. After attracting a certain number of birds, the breadcrumbs are replaced by a gun and the player can either shoot the birds or refrain from disrupting the peace. The game concludes with either a credits roll if they shot the gun or a short thesis explaining the nuance behind the choice of violence if they refrained.</p>
 
         </div>
     </div>
@@ -62,7 +89,7 @@
 <section id="block-techy" class="page-block">
     <div class="row align-center">
         <div class="large-6 medium-10 columns small-centered">
-            <h2>meaningful input</h2>
+            <h2 class="caps">meaningful input</h2>
             <p>Designing for Google Cardboard both affords an unprecedented freedom of motion, yet severely limits what is possible
                 visually and interaction wise. The lowfi feeling of the cardboard VR headset helps set a lower standard,
                 but maintaining a playable framerate is exceedingly difficult when rendering 3D on a phone. The input restriction
@@ -84,47 +111,24 @@
         </div>
     </div>
 </section>
-<div id="nav-start" data-something>
-    <!-- Controls how far the topbar will scroll -->
-    <div data-sticky-container>
-        <div id="header-nav" class="sticky" data-sticky data-sticky-on="small" data-anchor="nav-start" data-margin-top='0' data-margin-bottom='0'>
-            <!--<div class="title-bar " data-responsive-toggle="top-menu" data-hide-for="medium">
-                <button class="menu-icon" type="button" data-toggle></button>
-                <div class="title-bar-title" data-toggle>Menu</div>
-            </div>-->
-            <div class="row">
-                <div class="top-bar" id="top-menu">
-                    <div class="top-bar-left">
-                        <ul class="menu">
-                            <li class="menu-text "><a href="index.html"><img src="img/logo-color.svg" alt="" height="16" width="24"><span class="hide-for-small-only">Matthew Conto</span></a></li>
-                            <li class="active">
-                                <a href="portfolio.html">Archive</a>
-                            </li>
-                            <li class="">
-                                <a href="portfolio-article.html">Article</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><footer>
-    <div class="row">
-        <div class="medium-3 small-5 medium-offset-2 columns">
+
+
+<footer>
+    <!--<div class="row">
+        <div class="medium-3 large-2 small-5 columns">
             <img src="img/logo-white.svg" alt="">
+            
         </div>
-        <div class="medium-4 columns left">
-            <div class="small-6 columns">
+        <div class="column left">
+            <h3>Matthew Conto</h3>
+            <div class="medium-6 columns">
                 <ul class="">
                     <li><a href="https://twitter.com/drfuzzyness">Twitter</a></li>
                     <li><a href="http://www.last.fm/user/drfuzzyness">Last.fm</a></li>
                     <li><a href="http://drfuzzyness.tumblr.com/">Tumblr</a></li>
                 </ul>
             </div>
-            <div class="small-6 small columns">
+            <div class="medium-6 small columns">
                 <ul class="">
                     <li><a href="http://www.pinterest.com/drfuzzyness/">Pintrest</a></li>
                     <li><a href="https://github.com/drfuzzyness">Github</a></li>
@@ -132,11 +136,13 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="medium-12 medium-centered columns text-center credit-line">
-            <p><span class="cc" title="Creative Commons">c</span><span class="cc" title="Attribute">b</span><span class="cc"
-                title="Non Commerical">n</span> 2015 Matthew Conto</p>
+    </div>-->
+    <div class="row align-center">
+        <div class="shrink column text-center">
+            <!--<p><span class="cc" title="Creative Commons">c</span><span class="cc" title="Attribute">b</span><span class="cc"
+                title="Non Commerical">n</span> 2015 Matthew Conto</p>-->
+                <img src="img/logo-white.svg" alt="" width="100px">
+                <!--<h2>Matthew Conto</h2>-->
         </div>
     </div>
 </footer>    <script src="bower_components/jquery/dist/jquery.js"></script>

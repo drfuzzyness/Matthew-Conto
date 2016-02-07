@@ -3602,9 +3602,12 @@ header {
     header.full-header .row .columns .row {
       margin-top: 35%; }
   header.story-header {
-    min-height: 80%; }
-    header.story-header .row .columns .row {
-      margin-top: 0%; }
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    header.story-header div.row {
+      min-height: 600px; }
   header.half-header {
     min-height: 50%; }
     header.half-header .row .columns .row {
@@ -3708,8 +3711,17 @@ header {
     #header-nav .top-bar li a.active {
       border-color: #f68a1f; }
 
+article {
+  font-size: 1.125rem; }
+
 #body {
   margin-top: 6em; }
+
+.project-feed ul.posts {
+  list-style: none;
+  margin: 0; }
+  .project-feed ul.posts li.post {
+    margin-bottom: 2rem; }
 
 #sidebar ul {
   text-align: right;
@@ -3721,9 +3733,6 @@ header {
     font-weight: 300; }
     #sidebar ul a:visited {
       color: black; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    #sidebar ul #content-types-list {
-      @inherit .inline-list; } }
   #sidebar ul #content-types-list li {
     margin-bottom: 0; }
   #sidebar ul #content-types-list li a:hover, #sidebar ul #content-types-list li a:active, #sidebar ul #content-types-list .active {
@@ -3792,43 +3801,46 @@ header {
       font-weight: 500;
       color: #f68a1f; }
 
-.portfolio-grid .item {
-  margin-bottom: 1.625rem; }
-  .portfolio-grid .item a {
-    display: block;
-    background-color: dimgray;
-    border-radius: 0.25rem;
-    overflow: hidden;
-    transition: transform .1s;
-    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.4); }
-    .portfolio-grid .item a:hover, .portfolio-grid .item a:active {
+.portfolio-grid {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .portfolio-grid .item {
+    margin-bottom: 1.625rem; }
+    .portfolio-grid .item a {
+      display: block;
+      background-color: dimgray;
+      border-radius: 0.25rem;
+      overflow: hidden;
       transition: transform .1s;
-      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
-      transform: scale(1.1, 1.1); }
-    .portfolio-grid .item a .graphic {
-      margin: auto;
-      border-width: 0 0 1px 0;
-      border-style: solid;
-      border-color: rgba(255, 255, 255, 0.075); }
-    .portfolio-grid .item a .title {
-      line-height: 1em;
-      margin: 0.5rem 5% 0 5%; }
-    .portfolio-grid .item a .kind {
-      line-height: 1em;
-      font-style: italic;
-      font-size: .7em;
-      margin: 0 5% 0.75rem 5%; }
-    .portfolio-grid .item a .color-tag-list {
-      margin: 0.8125rem 1rem 0 0;
-      float: right; }
-    .portfolio-grid .item a.light-background .title {
-      color: black; }
-    .portfolio-grid .item a.light-background .kind {
-      color: rgba(0, 0, 0, 0.75); }
-    .portfolio-grid .item a.dark-background .title {
-      color: white; }
-    .portfolio-grid .item a.dark-background .kind {
-      color: rgba(255, 255, 255, 0.75); }
+      box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.4); }
+      .portfolio-grid .item a:hover, .portfolio-grid .item a:active {
+        transition: transform .1s;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+        transform: scale(1.03, 1.03); }
+      .portfolio-grid .item a .graphic {
+        margin: auto;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.075); }
+      .portfolio-grid .item a .title {
+        line-height: 1em;
+        margin: 0.5rem 5% 0 5%; }
+      .portfolio-grid .item a .kind {
+        line-height: 1em;
+        font-style: italic;
+        font-size: .7em;
+        margin: 0 5% 0.75rem 5%; }
+      .portfolio-grid .item a .color-tag-list {
+        margin: 0.8125rem 1rem 0 0;
+        float: right; }
+      .portfolio-grid .item a.light-background .title {
+        color: black; }
+      .portfolio-grid .item a.light-background .kind {
+        color: rgba(0, 0, 0, 0.75); }
+      .portfolio-grid .item a.dark-background .title {
+        color: white; }
+      .portfolio-grid .item a.dark-background .kind {
+        color: rgba(255, 255, 255, 0.75); }
 
 .featured-content {
   min-height: 100%;
@@ -3915,6 +3927,21 @@ footer {
    GENERAL
    ===============================
 */
+.button, .portfolio-item div.content .read-more, .portfolio-item div.content .secondary-link {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  transition: box-shadow .25s, background-color .25s; }
+  .button:hover, .portfolio-item div.content .read-more:hover, .portfolio-item div.content .secondary-link:hover, .button:active, .portfolio-item div.content .read-more:active, .portfolio-item div.content .secondary-link:active {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+    transition: box-shadow .25s, background-color .25s; }
+
+.button.white, .portfolio-item div.content .white.read-more, .portfolio-item div.content .white.secondary-link {
+  background-color: white;
+  color: black !important; }
+  .button.white:hover, .portfolio-item div.content .white.read-more:hover, .portfolio-item div.content .white.secondary-link:hover, .button.white:active, .portfolio-item div.content .white.read-more:active, .portfolio-item div.content .white.secondary-link:active {
+    background-color: white;
+    color: #f68a1f !important; }
+
 .page-block {
   padding: 10% 0 10% 0; }
 
