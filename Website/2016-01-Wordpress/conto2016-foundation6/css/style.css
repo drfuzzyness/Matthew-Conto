@@ -1,5 +1,26 @@
 @charset "UTF-8";
 /*
+Theme Name: Matthew Conto 2016
+Theme URI: http://underscores.me/
+Author: Matthew Conto
+Author URI: http://matthewconto.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mattconto-2016
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Matthew Conto 2016 is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*
                        __
                       /\/
    I'M MATTHEW CONTO AND WELCOME TO MY CSS.
@@ -1164,7 +1185,7 @@ button {
 .row.align-right {
   justify-content: flex-end; }
 
-.row.align-center, header.row {
+.row.align-center, header.row, nav.post-navigation .nav-links {
   justify-content: center; }
 
 .row.align-justify {
@@ -2372,7 +2393,7 @@ select {
     margin-right: 0.25rem; }
   .menu > li {
     display: table-cell; }
-  .menu.vertical > li {
+  .menu.vertical > li, .project-feed .sidebar .widget-container .widget ul.project-feed-magellan > li {
     display: block; }
   @media screen and (min-width: 40em) {
     .menu.medium-horizontal > li {
@@ -3594,10 +3615,12 @@ table.hover tr:nth-of-type(even):hover {
 
  */
 header {
-  background: url("../img/header-bg.png") white;
-  background-blend-mode: color-dodge;
+  background: white;
   color: #f68a1f;
-  text-align: right; }
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   header.full-header {
     min-height: 100%; }
     header.full-header .row {
@@ -3633,33 +3656,13 @@ header {
         padding: .5em .5em;
         transition: padding .25s, border .3s; }
   header.gif-header {
-    background: url("../img/MC.gif") #404041;
+    background: #404041;
     background-blend-mode: normal;
     background-size: cover;
     background-position: center center; }
   @media screen and (max-width: 39.9375em) {
     header {
       text-align: center; } }
-  header a {
-    color: #f68a1f;
-    transition: padding .25s, border .3s;
-    border-radius: .125em;
-    border: solid 1px transparent;
-    padding: 0 .5em;
-    font-style: oblique; }
-    @media screen and (max-width: 39.9375em) {
-      header a {
-        border: solid 1px #f68a1f;
-        padding: .5em .5em; } }
-    header a:visited {
-      color: inherit; }
-    header a:hover {
-      color: #f68a1f;
-      border: solid 1px #f68a1f;
-      font-weight: 500;
-      background-color: white;
-      padding: .5em .5em;
-      transition: padding .25s, border .3s; }
   header h1 {
     font-size: 4em; }
     @media screen and (max-width: 39.9375em) {
@@ -3678,11 +3681,31 @@ header {
   header ul.links {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
+    padding-bottom: 24px; }
     header ul.links :not(:last-child):after {
       content: " - "; }
     header ul.links li {
       display: inline; }
+      header ul.links li a {
+        color: #f68a1f;
+        transition: padding .25s, border .3s;
+        border-radius: .125em;
+        border: solid 1px transparent;
+        padding: 0 .5em;
+        font-style: oblique; }
+        @media screen and (max-width: 39.9375em) {
+          header ul.links li a {
+            border: solid 1px #f68a1f;
+            padding: .5em .5em; } }
+        header ul.links li a:visited {
+          color: inherit; }
+        header ul.links li a:hover {
+          color: #f68a1f;
+          border: solid 1px #f68a1f;
+          font-weight: 500;
+          background-color: white;
+          padding: .5em .5em;
+          transition: padding .25s, border .3s; }
 
 .story-subheader {
   padding: 5%;
@@ -3693,104 +3716,179 @@ header {
   .story-subheader h1, .story-subheader h2, .story-subheader h3, .story-subheader h4, .story-subheader h5, .story-subheader h6 {
     color: white; }
 
+.admin-bar #header-nav.is-stuck {
+  padding-top: 32px; }
+  @media screen and (max-width: 39.9375em) {
+    .admin-bar #header-nav.is-stuck {
+      padding-top: 0; } }
+
 #header-nav {
   width: 100%;
-  background: transparent;
+  background: white;
   box-shadow: 0 18px 24px -18px rgba(0, 0, 0, 0.15); }
   #header-nav.is-stuck {
     transition: background .25s;
     background: white; }
   #header-nav .title-bar {
-    background: transparent;
-    color: #f68a1f; }
-    #header-nav .title-bar .menu-icon {
-      color: #f68a1f; }
-  #header-nav .top-bar .menu-text a {
-    font-style: italic;
-    font-weight: normal;
-    text-transform: none;
-    padding-right: none;
-    border-bottom-width: 1px; }
-    #header-nav .top-bar .menu-text a img {
-      width: 48px;
-      height: 32px;
-      position: relative;
-      top: 0px; }
+    background: #3dc7d2;
+    width: 100%;
+    box-shadow: 0 18px 24px -18px rgba(0, 0, 0, 0.15); }
+    #header-nav .title-bar .menu-icon:after {
+      color: #f68a1f !important; }
+    #header-nav .title-bar .title-bar-title {
+      font-style: oblique;
+      font-weight: normal;
+      width: 100%;
+      text-align: center;
+      color: white; }
+      #header-nav .title-bar .title-bar-title.light-background {
+        color: #3dc7d2; }
+      #header-nav .title-bar .title-bar-title.dark-background {
+        color: white; }
+      #header-nav .title-bar .title-bar-title img {
+        width: 48px;
+        height: 32px; }
+  #header-nav .top-bar {
+    width: 100%;
+    background: white; }
+    #header-nav .top-bar .menu-text a {
+      font-style: italic;
+      font-weight: normal;
+      text-transform: none;
+      padding-right: none;
+      border-bottom-width: 1px; }
+      #header-nav .top-bar .menu-text a img {
+        width: 48px;
+        height: 32px;
+        position: relative;
+        top: 0px; }
+        @media screen and (max-width: 39.9375em) {
+          #header-nav .top-bar .menu-text a img {
+            width: 48px;
+            height: 32px;
+            position: relative;
+            top: 2px; } }
+    #header-nav .top-bar li a {
+      text-transform: uppercase;
+      padding: 1.25rem;
+      transition: border-color .5s, background-color .5s; }
+      #header-nav .top-bar li a.blue:hover, #header-nav .top-bar li a.blue:active {
+        color: white; }
+      #header-nav .top-bar li a:hover, #header-nav .top-bar li a:active {
+        transition: border-color .5s, background-color .5s;
+        background: #f68a1f;
+        color: white; }
+      #header-nav .top-bar li a.active {
+        border-color: #f68a1f; }
+    #header-nav .top-bar ul.search li form {
+      display: inline-block;
+      padding: 0;
+      margin-left: 12px; }
       @media screen and (max-width: 39.9375em) {
-        #header-nav .top-bar .menu-text a img {
-          width: 48px;
-          height: 32px;
-          position: relative;
-          top: 2px; } }
-  #header-nav .top-bar li a {
-    text-transform: uppercase;
-    padding: 1.25rem;
-    transition: border-color .5s, background-color .5s; }
-    #header-nav .top-bar li a.blue:hover, #header-nav .top-bar li a.blue:active {
-      color: white; }
-    #header-nav .top-bar li a:hover, #header-nav .top-bar li a:active {
-      transition: border-color .5s, background-color .5s;
-      background: #f68a1f;
-      color: white; }
-    #header-nav .top-bar li a.active {
-      border-color: #f68a1f; }
+        #header-nav .top-bar ul.search li form {
+          width: 100%; } }
+      #header-nav .top-bar ul.search li form label {
+        display: inline-block; }
+        @media screen and (max-width: 39.9375em) {
+          #header-nav .top-bar ul.search li form label {
+            padding: 20px;
+            padding-right: 500px; } }
+        #header-nav .top-bar ul.search li form label input {
+          display: inline-block;
+          height: 48px;
+          border: none;
+          padding-top: 0.875rem;
+          box-shadow: none;
+          max-width: 900px;
+          margin-right: 0; }
+      #header-nav .top-bar ul.search li form input {
+        display: none; }
 
-article {
+.entry-content {
   color: #333;
   font-size: 1.125rem; }
-  article a {
+  .entry-content a {
     border-width: 0 0 2px 0;
     border-style: dashed;
     border-color: #f68a1f;
     background: transparent;
     border-radius: 4px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15); }
-    article a[target=_blank]:after {
+    .entry-content a[target=_blank]:after {
       content: "⇱"; }
-    article a:hover, article a:active {
+    .entry-content a:hover, .entry-content a:active {
       border-width: 0;
       background-color: #f68a1f;
       color: white;
       border-radius: 4px;
       box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.15); }
-  article img {
+  .entry-content img {
     margin: 1rem; }
-  article h2 {
+  .entry-content h2 {
     box-shadow: 0 18px 24px -18px rgba(0, 0, 0, 0.15);
     margin-bottom: 1.5rem; }
-  article ul {
+  .entry-content ul {
     list-style-type: none;
     border-width: 0 0 0 1px;
     border-color: transparent;
     border-style: solid; }
     @media screen and (min-width: 40em) {
-      article ul {
+      .entry-content ul {
         padding-left: 0.875rem; } }
-    article ul li {
+    .entry-content ul li {
       color: black;
       border-color: transparent; }
-      article ul li:before {
+      .entry-content ul li:before {
         content: "➔ "; }
-      article ul li:hover, article ul li:active {
+      .entry-content ul li:hover, .entry-content ul li:active {
         color: black;
         border-color: #ddd; }
-        article ul li:hover:before, article ul li:active:before {
+        .entry-content ul li:hover:before, .entry-content ul li:active:before {
           color: #f68a1f; }
-    article ul:last-child {
+    .entry-content ul:last-child {
       margin-bottom: .7em; }
-  article figure figcaption {
+  .entry-content figure figcaption {
     color: #555;
     font-size: .8em; }
-  article title {
+  .entry-content title {
     text-transform: uppercase;
     color: #555;
     font-weight: 800;
     display: block; }
-  article description {
+  .entry-content description {
     display: block; }
 
 #body {
   margin-top: 6em; }
+
+.project-feed .sidebar .widget-container {
+  width: 100%; }
+  .project-feed .sidebar .widget-container .widget {
+    box-shadow: 18px 0 24px -18px rgba(0, 0, 0, 0.15); }
+    .project-feed .sidebar .widget-container .widget h4 {
+      color: #777;
+      padding-right: 16px; }
+    .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a {
+      display: block;
+      padding: 16px;
+      transition: background-color .2s, colors .2s, box-shadow; }
+      .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a.active {
+        background-color: #3dc7d2;
+        color: white;
+        box-shadow: 18px 0 24px -18px rgba(0, 0, 0, 0.3); }
+        .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a.active em, .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a.active strong {
+          color: white; }
+      .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a strong {
+        display: block;
+        color: #3dc7d2; }
+      .project-feed .sidebar .widget-container .widget ul.project-feed-magellan li a em {
+        display: block;
+        font-size: 0.75rem;
+        color: #777; }
+
+@media screen and (min-width: 40em) {
+  .project-feed .sidebar #project-posts {
+    padding-top: 32px; } }
 
 .project-feed ul.posts {
   list-style: none;
@@ -3886,6 +3984,9 @@ article {
         .blogpost .row .column .date a, .blogpost .row .columns .date a {
           color: #f68a1f; } }
 
+.sidebar {
+  padding-top: 4rem; }
+
 .portfolio-grid {
   padding-left: 2rem;
   padding-right: 2rem; }
@@ -3961,7 +4062,7 @@ article {
         display: block; }
 
 footer {
-  background: url("../img/header-bg.png") #3dc7d2;
+  background: #3dc7d2;
   background-blend-mode: color-dodge;
   color: white; }
   footer .row {
@@ -4029,7 +4130,7 @@ footer {
 
 .page-block {
   padding: 10% 0 10% 0; }
-  .page-block.half {
+  .page-block.half, nav.post-navigation {
     padding: 5% 0 5% 0; }
 
 .page-block-margin {
@@ -4152,3 +4253,66 @@ a::-moz-selection {
             display: inline; } }
       .thick-list li a:hover, .thick-list li a:active, .thick-list li a .active {
         background-color: #404041; }
+
+/* ===============================
+   Wordpress
+   ===============================
+*/
+.screen-reader-text {
+  display: none; }
+
+nav.post-navigation .nav-links .nav-previous a {
+  display: block;
+  color: #3dc7d2;
+  padding: 2rem;
+  background: #eee;
+  width: 100%; }
+  nav.post-navigation .nav-links .nav-previous a:before {
+    content: "⇐ "; }
+  nav.post-navigation .nav-links .nav-previous a:hover, nav.post-navigation .nav-links .nav-previous a:active {
+    background: #3dc7d2;
+    color: white; }
+
+nav.post-navigation .nav-links .nav-next a {
+  display: block;
+  color: #3dc7d2;
+  width: 100%;
+  padding: 2rem;
+  background: #eee; }
+  nav.post-navigation .nav-links .nav-next a:after {
+    content: " ⇒"; }
+  nav.post-navigation .nav-links .nav-next a:hover, nav.post-navigation .nav-links .nav-next a:active {
+    background: #3dc7d2;
+    color: white; }
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }

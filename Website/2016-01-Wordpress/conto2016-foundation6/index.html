@@ -2,20 +2,19 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="rgba(0, 0, 0, 1)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matthew Conto</title>
+	<meta charset="utf-8" />
+	<meta name="theme-color" content="rgba(61, 199, 210, 1)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Matthew Conto</title>
 
-    <link rel="stylesheet" href="css/app.css" />
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300italic,400,500,400italic' rel='stylesheet' type='text/css'>
-    <link href="stylesheet" href="">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:300italic,400,500,400italic' rel='stylesheet' type='text/css'>
+	<link href="stylesheet" href="">
 
-    <script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
-<body>
-    <header class="quarter-header light-background" >
+<body><header class="quarter-header light-background" >
 	<!--<div class="row">
 		<div class="large-12 column">-->
 			<div class="row align-center">
@@ -36,33 +35,55 @@
 		<!--</div>
 	</div>-->
 </header><div id="nav-start" data-something>
-    <!-- Controls how far the topbar will scroll -->
-    <div data-sticky-container>
-        <div id="header-nav" class="sticky" data-sticky data-sticky-on="small" data-anchor="nav-start" data-margin-top='0' data-margin-bottom='0'>
-            <!--<div class="title-bar " data-responsive-toggle="top-menu" data-hide-for="medium">
+	<!-- Controls how far the topbar will scroll -->
+	<div data-sticky-container>
+		<div id="header-nav" class="sticky" data-sticky data-sticky-on="small" data-anchor="nav-start" data-margin-top='0' data-margin-bottom='0'>
+			<!--<div class="title-bar " data-responsive-toggle="top-menu" data-hide-for="medium">
                 <button class="menu-icon" type="button" data-toggle></button>
                 <div class="title-bar-title" data-toggle>Menu</div>
             </div>-->
-            <div class="row">
-                <div class="top-bar" id="top-menu">
-                    <div class="top-bar-left">
-                        <ul class="menu">
-                            <li class="menu-text "><a href="/index.html"><img src="img/logo-color.svg" alt="" ><span class="hide-for-small-only">Matthew Conto</span></a></li>
-                            <li class="active">
-                                <a href="/blog.html">Blog</a>
-                            </li>
-                            <li class="">
-                                <a href="/portfolio-article.html">Article</a>
-                            </li>
-                            <li>
-                                <a href="/resume.html">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="row">
+				<div class="title-bar text-right" data-responsive-toggle="top-menu" data-hide-for="medium">
+					<!--<button class="menu-icon" type="button" data-toggle></button>-->
+					<div class="title-bar-title" type="button" data-toggle>
+						Menu
+					</div>
+				</div>
+				<div class="top-bar" id="top-menu">
+					<div class="top-bar-left">
+						<ul class="menu">
+							<li class="menu-text">
+								<a href="/index.html"><img src="img/logo-color.svg" alt=""><span class="hide-for-small-only">Matthew Conto</span></a>
+							</li>
+							<li class="active">
+								<a href="/blog.html">Blog</a>
+							</li>
+							<li class="">
+								<a href="/portfolio-article.html">Article</a>
+							</li>
+							<li>
+								<a href="/resume.html">Resume</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top-bar-right">
+						<ul class="menu search">
+							<li>
+								<form role="search" method="get" class="search-form" action="http://localhost:5757/">
+									<label>
+										<span class="screen-reader-text">Search for:</span>
+										<input class="search-field" placeholder="Search…" value="" name="s" title="Search for:" type="search">
+									</label>
+									<input class="search-submit" value="Search" type="submit">
+								</form>
+							</li>
+							<!--<li><button type="button" class="button">Search</button></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <section class="page-block">
     <div class="row ">
         <div class="column shrink">
